@@ -3,6 +3,7 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
+  <% if enhanced_cart.present? %>
 
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -25,7 +26,7 @@
             TOTAL:
           </th>
           <th>
-            <%= cart_subtotal_cents / 100.0 %>
+            <%= number_to_currency(cart_subtotal_cents / 100.0) %>
           </th>
         </tr>
       </tfoot>
@@ -38,7 +39,7 @@
         <script
           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-amount="<%= cart_subtotal_cents %>"
+          data-amount="<%= number_to_currency(cart_subtotal_cents) %>"
           data-name="Jungle"
           data-description="Khurram Virani's Jungle Order"
           data-locale="auto"
@@ -48,5 +49,11 @@
       <% end %>
     </div>
   </div>
+  <% else %>
+  <div class="alert alert-warning" role="alert">
+  <b> Your cart is currently is empty!</b>
+  </div>
+  <%= link_to '<a href="/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back to Shop</a>'.html_safe, '/' %>
+  <% end %>
 
 </section>
