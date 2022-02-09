@@ -35,22 +35,22 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ## Screenshots
 
 Homepage
-!["Homepage"]()
+!["Homepage"](https://github.com/gloryandgoore/Jungle/blob/master/docs/Homepage.png)
 
 About Us
-!["About Us"]()
+!["About Us"](https://github.com/gloryandgoore/Jungle/blob/master/docs/About%20us%20.png)
 
 Admin Dashboard
-!["Admin Dashboard"]()
+!["Admin Dashboard"](https://github.com/gloryandgoore/Jungle/blob/master/docs/Admin%20Dashboard.png)
 
 Admin All Products
-!["Admin All Products"]()
+!["Admin All Products"](https://github.com/gloryandgoore/Jungle/blob/master/docs/Admin%20All%20Product.png)
 
 Product Detail Page
-!["Product Detail Page"]()
+!["Product Detail Page"](https://github.com/gloryandgoore/Jungle/blob/master/docs/Product%20details.png)
 
 Cart
-!["Cart"]()
+!["Cart"](https://github.com/gloryandgoore/Jungle/blob/master/docs/Cart.png)
 
 Complete Order 
-!["Complete Order"]()
+!["Complete Order"](https://github.com/gloryandgoore/Jungle/blob/master/docs/Complete%20Order.png)
