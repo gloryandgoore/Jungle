@@ -9,26 +9,16 @@ class UsersController < ApplicationController
   
       if user.save
         session[:user_id] = user.id
-        session[:current_user] = user
-        redirect_to :root, notice: 'User created!'
+        redirect_to '/'
       else
-        render :new
+        redirect_to '/signup'
       end
     end
   
     private
   
-    def user_params
-      params[:user][:name] = "#{params[:user][:first_name]} #{params[:user][:last_name]}"
-  
-      puts params[:name], "#{params[:first_name]} #{params[:last_name]}"
-  
-      params.require(:user).permit(
-        :name,
-        :email,
-        :password,
-        :password_confirmation
-      )
+    def user_params 
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
   
     end
   
