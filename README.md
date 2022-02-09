@@ -31,3 +31,26 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Screenshots
+
+Homepage
+!["Homepage"]()
+
+About Us
+!["About Us"]()
+
+Admin Dashboard
+!["Admin Dashboard"]()
+
+Admin All Products
+!["Admin All Products"]()
+
+Product Detail Page
+!["Product Detail Page"]()
+
+Cart
+!["Cart"]()
+
+Complete Order 
+!["Complete Order"]()
